@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images</title>
+</head>
+
+<body>
+  <h1>Вставка изображений в HTML-документ</h1>
+  <hr>
+
+  <h2>Греция</h2>
+
+  <p>
+  Греция находится в Южной Европе и занимает южную часть Балканского полуострова.
+  </p>
+
+  <p>
+  Территория страны делится на материковую часть, полуостров Пелопоннес и острова в Эгейском море
+(крупнейшие &ndash; Крит, Лесбос, Эвбея).
+  </p>
+
+  <figure>
+    <img src="images/img_peloponnese.png" alt="полуостров Пелопоннес">
+    <img src="images/img_peloponnese2.png" alt="полуостров Пелопоннес">
+    <figcaption>
+    Рельеф страны представляет собой чередование гористой местности и безлесых
+    выровненных участков, живописных плодородных долин, мелких бухт, заливов, островных территорий,
+    карстовых воронок и пещер в западной части Греции.
+  </figcaption>
+  </figure>
+  <hr>
+
+  <h2>Создание изображения в качестве карты</h2>
+
+  <img src="images/map_peloponnese.jpeg" alt="Карта Греции" usemap="#greece">
+
+  <map name="greece">
+    <area shape="circle" coords="345,134,20" href="https://www.skg-airport.gr/en" alt="Saloniki airport" target="_blank">
+    <area shape="circle" coords="143,452,20" href="https://www.zth-airport.gr/en" alt="Zakynthos airport" target="_blank">
+    <area shape="circle" coords="413,397,20" href="https://www.aia.gr/traveler/" alt="Athens airport" target="_blank">
+    <area shape="circle" coords="739,522,20" href="https://www.kgs-airport.gr/en" alt="Athens airport" target="_blank">
+    <area shape="circle" coords="837,593,20" href="https://www.rhodes-airport.info" alt="Rhodes airport" target="_blank">
+    <area shape="circle" coords="536,693,20" href="http://www.hcaa.gr/en/our-airports/kratikos-aerolimenas-hrakleioy-n-kazantzakhs" alt="Heraklion airport" target="_blank">
+    <area shape="poly" coords="220,410,237,394,258,397,271,403,279,409,302,413,322,429,330,435,353,445,366,453,361,472,377,477,390,486,387,498,361,502,351,498,353,491,342,486,327,480,331,501,341,512,348,520,354,531,362,550,362,568,371,590,349,579,327,555,305,572,308,599,283,552,271,550,264,536,252,543,254,554,250,565,230,555,221,541,215,518,227,496,215,485,198,475,187,462,173,445,183,434,188,422,196,409,211,412,220,410" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BB%D0%BE%D0%BF%D0%BE%D0%BD%D0%BD%D0%B5%D1%81" alt="Peloponnese" target="_blank">
+</map>
+
+</body>
+</html>

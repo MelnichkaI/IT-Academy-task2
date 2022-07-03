@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+</head>
+
+<body>
+  <h1>Теги для создания списков</h1>
+
+  <h2>Виды списков</h2>
+
+  <ol type="a" reversed>
+    <li> маркированный список <a href="#ul">(unordered list)</a>;</li>
+    <li>нумерованный список <a href="#ol">(ordered list)</a>;</li>
+    <li>список определений <a href="#dl">(definition list)</a>.</li>
+  </ol>
+
+  <p>
+  Маркированный и нумерованный списки представляют собой контейнеры, внутри которых располагаются элементы списка.
+  </p>
+
+  <h3 id="ul">Маркированный список</h3>
+
+  <ul style="list-style-type: square; list-style-position: inside;">
+    <li>Маркированный список создается с помощью тега &lt;ul&gt;&lt;/ul&gt; (unordered list).</li>
+    <li style="list-style-type: none;">В качестве маркера элемента списка выступает метка, например, закрашенный кружок.</li>
+    <li>Элементы маркированного списка создаются с помощью тега &lt;li&gt;&lt;/li&gt; (list item).</li>
+  </ul>
+
+  <h3 id="ol">Нумерованный список</h3>
+
+  <ul style="list-style-type: circle;">
+    <li>Нумерованный список создается с помощью тега &lt;ol&gt;&lt;/ol&gt; (ordered list).</li>
+    <li style="list-style-type: none;">Нумерация может быть числовая или алфавитная.</li>
+    <li>Элементы нумерованного списка (по аналогии с маркированным списками) создаются с помощью тега &lt;li&gt;&lt;/li&gt; (list item).</li>
+  </ul>
+
+  <p>
+  С помощью CSS свойств можно изменить внешний вид маркера списка, добавить изображение для маркера и изменить его
+  местоположение.
+  </p>
+
+  <img src="images/img.png" alt="Списки">
+
+  <h3 id="dl">Список определений</h3>
+
+  <ul style="list-style-image: url(/images/icon.png);">
+    <li>Список определений создается с помощью тега &lt;dl&gt;&lt;/dl&gt; (definition list)</li>
+    <li>Для добавления термина применяется тег &lt;dt&gt;&lt;/dt&gt;, а для вставки определения &mdash; &lt;dd&gt;&lt;/dd&gt;.</li>
+  </ul>
+
+  <p>
+Списки можно помещать друг в друга. Например, внутрь маркированного списка можно вложить нумерованный
+список и наоборот.
+  </p>
+  <hr>
+
+  <a href="image.html" target="_blank">Следующая тема</a>
+
+</body>
+</html>
